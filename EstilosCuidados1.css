@@ -1,0 +1,88 @@
+main {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #7dd5d1;
+}
+
+.cont {
+  /* display: grid;
+  grid-template-columns: 300px 300px 300px 300px; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  font-size: 11px;
+  position: relative;
+  margin-top: 0;
+  margin: 0;
+  padding-top: 0;
+  flex-wrap: wrap;
+}
+
+.bord {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 290px;
+  width: 500px;
+}
+
+.cont figure {
+  margin: 10px;
+  height: 100%;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 7px;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.cont figure img {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
+}
+
+.cont figure div {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(11, 103, 123, 0.6);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+
+.cont figure:hover > div {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cont figure :hover > div h2 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.cont figure div h2 {
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 10px;
+  transition: all 500ms ease-out;
+  margin-top: 10px;
+}
+
+.cont figure div p {
+  color: #fff;
+  font-size: 15px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
